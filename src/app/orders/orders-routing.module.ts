@@ -8,9 +8,9 @@ import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [{ path: 'orders', redirectTo: 'orders/index', pathMatch: 'full' },
 { path: 'orders/list', component: ListComponent },
-{ path: 'orders/:playerId/details', component: DetailsComponent },
+{ path: 'orders/:orderId/details', component: DetailsComponent },
 { path: 'orders/create', component: CreateComponent },
-{ path: 'orders/:playerId/edit', component: EditComponent }];
+{ path: 'orders/:orderId/edit', component: EditComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

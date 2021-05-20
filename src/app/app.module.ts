@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import {OrdersModule} from './orders/orders.module';
-import { ListComponent } from "./orders/list/list.component";
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -30,11 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
     OrdersModule,
     HttpClientModule,
     RouterModule,
-    FormsModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'orders', component: ListComponent },
-    ])
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

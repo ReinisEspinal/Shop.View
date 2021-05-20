@@ -1,4 +1,4 @@
-export interface IOrdersGetModel {
+export interface IOrdersModel {
     OrderId: number,
     CustomerName: string,
     Employee: string,
